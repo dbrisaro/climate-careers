@@ -140,7 +140,7 @@ export default function ScatterMap({ companies, selected, onSelect }) {
 
       {/* Bottom hint */}
       <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 px-1">
-        Haz click en cualquier empresa para ver detalles.
+        Click any company to see details.
       </p>
     </div>
   );
