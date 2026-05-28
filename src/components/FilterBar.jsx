@@ -67,34 +67,14 @@ export default function FilterBar({ filters, onChange }) {
         })}
       </div>
 
-      {/* Min fit */}
-      <div className="flex items-center gap-2">
-        <span className="text-xs text-gray-400 font-medium uppercase tracking-wide">Min fit</span>
-        <div className="flex gap-1">
-          {[1, 2, 3, 4, 5].map((n) => (
-            <button
-              key={n}
-              onClick={() => onChange({ ...filters, minFit: filters.minFit === n ? 1 : n })}
-              className={`text-sm transition-opacity ${
-                n <= filters.minFit ? 'opacity-100' : 'opacity-30'
-              }`}
-              title={`Show ${n}★+`}
-            >
-              ★
-            </button>
-          ))}
-        </div>
-      </div>
-
       {/* Reset */}
-      {(filters.search || filters.categories.length < 5 || filters.regions.length < 3 || filters.minFit > 1) && (
+      {(filters.search || filters.categories.length < 5 || filters.regions.length < 3) && (
         <button
           onClick={() =>
             onChange({
               search: '',
               categories: Object.keys(CATEGORY_CONFIG),
               regions: REGIONS,
-              minFit: 1,
             })
           }
           className="text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 underline"

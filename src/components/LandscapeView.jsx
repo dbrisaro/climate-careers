@@ -18,11 +18,7 @@ function CompanyCard({ company, onSelect }) {
           <span>{FLAG[company.country] ?? '🌍'}</span>
           {company.name}
         </span>
-        <div className="flex gap-0.5">
-          {[1,2,3,4,5].map(i => (
-            <span key={i} className={`text-xs ${i <= company.fit ? 'text-amber-400' : 'text-gray-200 dark:text-gray-700'}`}>★</span>
-          ))}
-        </div>
+        <span className="text-xs text-gray-400">{company.region}</span>
       </div>
       <p className="text-xs text-gray-500 dark:text-gray-400 leading-snug line-clamp-2">{company.description}</p>
       <div className="flex flex-wrap gap-1 mt-2">

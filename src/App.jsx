@@ -14,7 +14,6 @@ const DEFAULT_FILTERS = {
   search: '',
   categories: ALL_CATEGORIES,
   regions: ALL_REGIONS,
-  minFit: 1,
 };
 
 export default function App() {
@@ -34,7 +33,6 @@ export default function App() {
     return companiesData.filter((c) => {
       if (!filters.categories.includes(c.category)) return false;
       if (!filters.regions.includes(c.region) && !filters.regions.includes('Remote')) return false;
-      if (c.fit < filters.minFit) return false;
       if (q) {
         const inName = c.name.toLowerCase().includes(q);
         const inTags = c.tags.some((t) => t.toLowerCase().includes(q));
@@ -143,11 +141,7 @@ export default function App() {
                           <p className="text-sm font-medium text-gray-900 dark:text-gray-50 truncate">{c.name}</p>
                           <p className="text-xs text-gray-400 truncate">{c.description}</p>
                         </div>
-                        <div className="flex gap-0.5 shrink-0">
-                          {[1,2,3,4,5].map(i => (
-                            <span key={i} className={`text-xs ${i <= c.fit ? 'text-amber-400' : 'text-gray-200 dark:text-gray-700'}`}>★</span>
-                          ))}
-                        </div>
+                        <span className="text-xs text-gray-400 shrink-0">{c.region}</span>
                       </button>
                     );
                   })}
