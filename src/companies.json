@@ -755,5 +755,102 @@
       "risk-modelling"
     ],
     "careers": "https://suyana.io"
+  },
+  {
+    "name": "Tomorrow.io",
+    "category": "data",
+    "region": "USA",
+    "x": 0.22,
+    "y": 0.24,
+    "country": "US",
+    "description": "Commercial weather intelligence platform. Turns forecast models and proprietary sensor data into operational decisions for logistics, energy, aviation and sports. Very applied ML/data stack.",
+    "relevance": "Strong Python/ML engineering culture. Roles focus on forecast post-processing, nowcasting, and building weather APIs at scale. Good entry point if pivoting from pure climate science to industry.",
+    "tags": [
+      "weather",
+      "forecasting",
+      "NWP",
+      "Python",
+      "ML",
+      "nowcasting",
+      "APIs"
+    ],
+    "careers": "https://www.tomorrow.io/careers/"
+  },
+  {
+    "name": "Spire Global",
+    "category": "eo",
+    "region": "USA",
+    "x": 0.68,
+    "y": 0.18,
+    "country": "US",
+    "description": "Operates a constellation of nanosatellites for weather, maritime and aviation data. Sells GNSS-RO weather profiles to met agencies and commercial clients. No insurance focus.",
+    "relevance": "Satellite data pipeline roles: ingesting GNSS radio occultation data, assimilation into NWP models, building weather data products. Strong intersection of EO and operational meteorology.",
+    "tags": [
+      "satellite",
+      "GNSS-RO",
+      "NWP",
+      "nanosatellite",
+      "weather",
+      "Python"
+    ],
+    "careers": "https://spire.com/careers/"
+  },
+  {
+    "name": "ClimateAi",
+    "category": "data",
+    "region": "USA",
+    "x": 0.32,
+    "y": 0.28,
+    "country": "US",
+    "description": "Climate risk analytics for food and agriculture supply chains. Quantifies yield risk, water stress and supply disruption under future climate scenarios. Serves large CPG and agribusiness clients.",
+    "relevance": "Applied climate science for non-insurance use cases. Roles involve downscaling CMIP6 scenarios, building crop-climate models and translating physical risk into supply chain metrics.",
+    "tags": [
+      "CMIP6",
+      "downscaling",
+      "agriculture",
+      "supply-chain",
+      "Python",
+      "climate-scenarios"
+    ],
+    "careers": "https://climate.ai/careers/"
+  },
+  {
+    "name": "Pachama",
+    "category": "eo",
+    "region": "USA",
+    "x": 0.75,
+    "y": 0.14,
+    "country": "US",
+    "description": "Forest carbon monitoring using satellite imagery and ML. Verifies carbon credits by estimating above-ground biomass and detecting deforestation at scale. No insurance or finance focus.",
+    "relevance": "Remote sensing meets carbon science: SAR, LiDAR, multispectral fusion for biomass estimation. Ideal if you want to apply EO skills to nature-based climate solutions rather than financial risk.",
+    "tags": [
+      "SAR",
+      "LiDAR",
+      "carbon",
+      "biomass",
+      "deforestation",
+      "Python",
+      "remote-sensing"
+    ],
+    "careers": "https://pachama.com/careers/"
+  },
+  {
+    "name": "South Pole",
+    "category": "data",
+    "region": "Europe",
+    "x": 0.2,
+    "y": 0.2,
+    "country": "CH",
+    "description": "Global carbon project developer and climate solutions consultancy. Develops and certifies carbon offset projects, runs TCFD advisory services and net-zero strategy for corporates.",
+    "relevance": "Climate data and MRV (Monitoring, Reporting, Verification) roles. Less coding-heavy than pure tech firms but broad exposure to carbon markets, climate scenarios and corporate disclosure frameworks.",
+    "tags": [
+      "carbon-markets",
+      "MRV",
+      "TCFD",
+      "net-zero",
+      "consulting",
+      "climate-scenarios"
+    ],
+    "careers": "https://www.southpole.com/careers"
   }
 ]
