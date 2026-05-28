@@ -34,6 +34,13 @@ export const CATEGORY_CONFIG = {
     badge: 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300',
     short: 'Data',
   },
+  finance: {
+    label: 'Finance & Consulting',
+    color: '#0891b2',
+    dot: 'bg-cyan-600',
+    badge: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-300',
+    short: 'Finance',
+  },
 };
 
 export const REGION_OPTIONS = ['Europe', 'USA', 'Remote'];
@@ -50,7 +57,7 @@ export const ARCHETYPES = [
   {
     id: 'eo',
     title: 'Earth Observation Analytics Companies',
-    subtitle: 'Kayrros · Lobelia Earth · ICEYE · Tesselo · Planet · Hydrosat · Ocean Ledger',
+    subtitle: 'Kayrros · Lobelia Earth · ICEYE · Planet · Hydrosat',
     description:
       'Satellite data → actionable insights. Strong Python/GIS stack required, close to research culture. These companies turn EO data into products for agriculture, emissions monitoring, disaster response and insurance.',
     color: '#22c55e',
@@ -58,7 +65,7 @@ export const ARCHETYPES = [
   {
     id: 'risk',
     title: 'Physical Risk & Cat Modelling Firms',
-    subtitle: "Mitiga · Climate X · Fathom · JBA · Moody's RMS · Verisk/AIR · Jupiter · Reask",
+    subtitle: "Mitiga · Climate X · Fathom · JBA · Moody's RMS · Verisk/AIR · Jupiter · Reask · Repath",
     description:
       'Build the models that quantify climate hazard and loss. Intersection of climate science and financial risk. Strong demand for Python scientists who understand hydrology, atmospheric dynamics, or statistical extreme-value theory.',
     color: '#3b82f6',
@@ -66,17 +73,25 @@ export const ARCHETYPES = [
   {
     id: 'parametric',
     title: 'Parametric Insurance Players',
-    subtitle: 'Floodbase · Descartes · Repath · Kettle · Resallience · Arbol · AON · Swiss Re',
+    subtitle: 'Floodbase · Descartes · Kettle · Arbol · AON · Swiss Re',
     description:
       'Trigger-based insurance products need climate science plus some understanding of insurance structures. The data scientist role here sits at the boundary: designing satellite-based triggers, validating models against loss data, communicating uncertainty to underwriters.',
     color: '#f97316',
   },
   {
     id: 'data',
-    title: 'Climate Data & ESG Platforms',
+    title: 'ESG / Climate Data Platforms',
     subtitle: 'The Climate Data Factory · First Street · Cervest · Sust Global · Betterview · dClimate',
     description:
       'Data products for disclosure and reporting. Less scientific depth, more data engineering and communication. Relevant for risk scoring at scale and TCFD/CSRD compliance products. Good entry points if transitioning from pure science.',
     color: '#6b7280',
+  },
+  {
+    id: 'finance',
+    title: 'Finance & Consulting',
+    subtitle: 'BlackRock · MSCI · S&P Global · McKinsey · Deloitte · WTW · World Bank',
+    description:
+      'Financial institutions and consulting firms with dedicated climate risk teams. Roles vary widely: from quant analyst building physical risk models to consultant communicating climate scenarios to C-suite. Expect more stakeholder management and less hands-on coding than in pure-tech firms, but significant scale and impact.',
+    color: '#0891b2',
   },
 ];

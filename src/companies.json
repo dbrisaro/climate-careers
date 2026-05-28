@@ -607,5 +607,132 @@
       "data platform"
     ],
     "careers": "https://www.dclimate.net/careers"
+  },
+  {
+    "name": "BlackRock",
+    "category": "finance",
+    "region": "USA",
+    "x": 0.3,
+    "y": 0.88,
+    "country": "US",
+    "description": "NYC. Aladdin Climate team builds physical climate risk analytics integrated into the world's largest asset management platform. Uses third-party climate hazard data to assess portfolio exposure across millions of assets.",
+    "relevance": "The Aladdin Climate team genuinely hires climate scientists and data engineers who can translate physical hazard data (flood, heat, wildfire) into financial risk metrics at portfolio scale. High impact, finance-heavy culture.",
+    "tags": [
+      "physical risk",
+      "portfolio analytics",
+      "climate data",
+      "Python",
+      "financial risk"
+    ],
+    "careers": "https://careers.blackrock.com"
+  },
+  {
+    "name": "MSCI",
+    "category": "finance",
+    "region": "Europe",
+    "x": 0.38,
+    "y": 0.84,
+    "country": "GB",
+    "description": "London / NYC. Acquired Carbon Delta (2019) to build climate risk analytics for investors. MSCI Climate Risk Center produces physical and transition risk scores used across global financial markets.",
+    "relevance": "Climate risk data science roles working with CMIP6 scenarios, physical hazard models and financial exposure data. Direct use of climate science in an investment context.",
+    "tags": [
+      "climate risk",
+      "physical risk",
+      "CMIP6",
+      "financial risk",
+      "data science"
+    ],
+    "careers": "https://careers.msci.com"
+  },
+  {
+    "name": "S&P Global",
+    "category": "finance",
+    "region": "Europe",
+    "x": 0.35,
+    "y": 0.82,
+    "country": "GB",
+    "description": "London / NYC. Sustainable1 division integrates climate risk data (via acquisitions of Trucost and The Climate Service) into credit ratings, indices and risk analytics for global markets.",
+    "relevance": "Climate risk data scientist roles processing large-scale physical risk datasets for financial products. Uses climate models, geospatial data and EO inputs. Good entry point into finance from science.",
+    "tags": [
+      "climate risk",
+      "ESG",
+      "physical risk",
+      "geospatial",
+      "data science"
+    ],
+    "careers": "https://careers.spglobal.com"
+  },
+  {
+    "name": "McKinsey",
+    "category": "finance",
+    "region": "Europe",
+    "x": 0.28,
+    "y": 0.78,
+    "country": "GB",
+    "description": "Global. Sustainability & Climate Analytics practice works on climate risk quantification for corporates and financial institutions. More analytical than typical McKinsey — uses climate models and scenario analysis.",
+    "relevance": "The analytics/data science track within the climate practice involves building climate risk models and translating IPCC scenarios into business impact. Requires strong communication skills alongside technical depth.",
+    "tags": [
+      "climate risk",
+      "consulting",
+      "scenario analysis",
+      "TCFD",
+      "Python"
+    ],
+    "careers": "https://www.mckinsey.com/careers"
+  },
+  {
+    "name": "Deloitte",
+    "category": "finance",
+    "region": "Europe",
+    "x": 0.25,
+    "y": 0.76,
+    "country": "GB",
+    "description": "Global. Climate & Sustainability practice covers physical climate risk, TCFD/CSRD reporting and climate scenario analysis for financial institutions and corporates. Growing technical team.",
+    "relevance": "Technical roles exist within the climate risk practice — building physical risk models, processing climate data for CSRD disclosures. Less deep science than specialist firms but significant client exposure.",
+    "tags": [
+      "climate risk",
+      "TCFD",
+      "CSRD",
+      "consulting",
+      "scenario analysis"
+    ],
+    "careers": "https://www2.deloitte.com/global/en/careers.html"
+  },
+  {
+    "name": "WTW",
+    "category": "finance",
+    "region": "Europe",
+    "x": 0.42,
+    "y": 0.84,
+    "country": "GB",
+    "description": "London. Willis Towers Watson — insurance consulting and cat risk analytics. Climate Quantified team builds physical climate risk tools for insurers. More technical than AON, closer to the modelling.",
+    "relevance": "Cat risk analytics and climate modelling for the insurance market. Uses hazard models and climate projections — closer to the technical end of insurance consulting.",
+    "tags": [
+      "cat modelling",
+      "insurance",
+      "climate risk",
+      "consulting",
+      "physical risk"
+    ],
+    "careers": "https://careers.wtwco.com"
+  },
+  {
+    "name": "World Bank / IFC",
+    "category": "finance",
+    "region": "Remote",
+    "x": 0.55,
+    "y": 0.7,
+    "country": "US",
+    "description": "Washington DC (remote roles available). Climate risk team uses EO, climate models and geospatial analysis for infrastructure investment decisions in developing countries. Partners with Fathom, JBA and others.",
+    "relevance": "Technical climate risk roles that directly use EO data and climate projections for infrastructure vulnerability assessment. Global development mandate. Python/GIS stack. Competitive but mission-driven.",
+    "tags": [
+      "climate risk",
+      "EO",
+      "geospatial",
+      "infrastructure",
+      "Python",
+      "development finance"
+    ],
+    "careers": "https://jobs.worldbank.org"
   }
 ]
