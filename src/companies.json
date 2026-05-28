@@ -17,7 +17,8 @@
       "SAR",
       "CMIP6"
     ],
-    "careers": "https://jobs.esa.int"
+    "careers": "https://jobs.esa.int",
+    "employees": 2200
   },
   {
     "name": "EUMETSAT",
@@ -34,7 +35,8 @@
       "satellite",
       "meteorology"
     ],
-    "careers": "https://www.eumetsat.int/careers"
+    "careers": "https://www.eumetsat.int/careers",
+    "employees": 400
   },
   {
     "name": "ECMWF",
@@ -51,7 +53,8 @@
       "ERA5",
       "climate modelling"
     ],
-    "careers": "https://www.ecmwf.int/en/about/jobs"
+    "careers": "https://www.ecmwf.int/en/about/jobs",
+    "employees": 380
   },
   {
     "name": "Copernicus / CLMS",
@@ -70,7 +73,8 @@
       "climate monitoring",
       "Copernicus"
     ],
-    "careers": "https://www.copernicus.eu/en/opportunities"
+    "careers": "https://www.copernicus.eu/en/opportunities",
+    "employees": 300
   },
   {
     "name": "ECB",
@@ -87,7 +91,8 @@
       "macroeconomics",
       "policy"
     ],
-    "careers": "https://talent.ecb.europa.eu"
+    "careers": "https://talent.ecb.europa.eu",
+    "employees": 4500
   },
   {
     "name": "Deltares",
@@ -107,7 +112,8 @@
       "Python",
       "research"
     ],
-    "careers": "https://www.deltares.nl/en/careers"
+    "careers": "https://www.deltares.nl/en/careers",
+    "employees": 900
   },
   {
     "name": "Kayrros",
@@ -128,7 +134,8 @@
       "Python",
       "emissions"
     ],
-    "careers": "https://www.kayrros.com/career/"
+    "careers": "https://www.kayrros.com/career/",
+    "employees": 200
   },
   {
     "name": "Hydrosat",
@@ -146,7 +153,8 @@
       "satellite",
       "agriculture"
     ],
-    "careers": "https://hydrosat.com/careers"
+    "careers": "https://hydrosat.com/careers",
+    "employees": 25
   },
   {
     "name": "Planet",
@@ -163,7 +171,8 @@
       "satellite",
       "imagery"
     ],
-    "careers": "https://www.planet.com/company/careers/"
+    "careers": "https://www.planet.com/company/careers/",
+    "employees": 500
   },
   {
     "name": "Lobelia Earth",
@@ -181,7 +190,8 @@
       "CMIP6",
       "climate projections"
     ],
-    "careers": "https://lobelia.earth"
+    "careers": "https://lobelia.earth",
+    "employees": 25
   },
   {
     "name": "ICEYE",
@@ -201,7 +211,8 @@
       "wildfire",
       "insurance"
     ],
-    "careers": "https://www.iceye.com/careers"
+    "careers": "https://www.iceye.com/careers",
+    "employees": 600
   },
   {
     "name": "Mitiga Solutions",
@@ -220,7 +231,8 @@
       "Python",
       "cat modelling"
     ],
-    "careers": "https://apply.workable.com/mitiga-solutions/"
+    "careers": "https://apply.workable.com/mitiga-solutions/",
+    "employees": 50
   },
   {
     "name": "Climate X",
@@ -239,7 +251,8 @@
       "Python",
       "geospatial"
     ],
-    "careers": "https://www.climate-x.com/careers"
+    "careers": "https://www.climate-x.com/careers",
+    "employees": 40
   },
   {
     "name": "Moody's RMS",
@@ -258,7 +271,8 @@
       "storm surge",
       "flood"
     ],
-    "careers": "https://careers.moodys.com"
+    "careers": "https://careers.moodys.com",
+    "employees": 1500
   },
   {
     "name": "Verisk / AIR",
@@ -275,7 +289,8 @@
       "insurance",
       "GIS"
     ],
-    "careers": "https://www.verisk.com/careers/"
+    "careers": "https://www.verisk.com/careers/",
+    "employees": 9000
   },
   {
     "name": "Fathom",
@@ -294,7 +309,8 @@
       "Python",
       "hydrological modelling"
     ],
-    "careers": "https://www.fathom.global/careers"
+    "careers": "https://www.fathom.global/careers",
+    "employees": 80
   },
   {
     "name": "JBA Risk Management",
@@ -313,7 +329,8 @@
       "parametric",
       "hydrological modelling"
     ],
-    "careers": "https://www.jbarisk.com/careers"
+    "careers": "https://www.jbarisk.com/careers",
+    "employees": 200
   },
   {
     "name": "Reask",
@@ -333,7 +350,8 @@
       "physical risk",
       "ILS"
     ],
-    "careers": "https://reask.earth/careers"
+    "careers": "https://reask.earth/careers",
+    "employees": 20
   },
   {
     "name": "Jupiter Intelligence",
@@ -350,7 +368,8 @@
       "climate analytics",
       "Python"
     ],
-    "careers": "https://www.jupiterintel.com/careers"
+    "careers": "https://www.jupiterintel.com/careers",
+    "employees": 80
   },
   {
     "name": "Descartes Underwriting",
@@ -368,7 +387,8 @@
       "physical risk",
       "Python"
     ],
-    "careers": "https://descartesunderwriting.com/careers"
+    "careers": "https://descartesunderwriting.com/careers",
+    "employees": 150
   },
   {
     "name": "Floodbase",
@@ -388,7 +408,8 @@
       "SAR",
       "Python"
     ],
-    "careers": "https://www.floodbase.com/careers"
+    "careers": "https://www.floodbase.com/careers",
+    "employees": 25
   },
   {
     "name": "Arbol",
@@ -405,7 +426,8 @@
       "climate risk",
       "data platform"
     ],
-    "careers": "https://www.arbol.io/careers"
+    "careers": "https://www.arbol.io/careers",
+    "employees": 60
   },
   {
     "name": "Kettle",
@@ -423,7 +445,8 @@
       "ML",
       "reinsurance"
     ],
-    "careers": "https://www.kettle.com/careers"
+    "careers": "https://www.kettle.com/careers",
+    "employees": 40
   },
   {
     "name": "Repath Earth",
@@ -442,7 +465,8 @@
       "climate analytics",
       "Python"
     ],
-    "careers": "https://repath.earth/join-us"
+    "careers": "https://repath.earth/join-us",
+    "employees": 40
   },
   {
     "name": "AON",
@@ -459,7 +483,8 @@
       "insurance",
       "consulting"
     ],
-    "careers": "https://jobs.aon.com"
+    "careers": "https://jobs.aon.com",
+    "employees": 50000
   },
   {
     "name": "Swiss Re",
@@ -477,7 +502,8 @@
       "cat modelling",
       "climate risk"
     ],
-    "careers": "https://www.swissre.com/careers"
+    "careers": "https://www.swissre.com/careers",
+    "employees": 14000
   },
   {
     "name": "Resallience",
@@ -497,7 +523,8 @@
       "EO",
       "consulting"
     ],
-    "careers": "https://www.resallience.com/nous-contacter"
+    "careers": "https://www.resallience.com/nous-contacter",
+    "employees": 60
   },
   {
     "name": "The Climate Data Factory",
@@ -515,7 +542,8 @@
       "climate projections",
       "Python"
     ],
-    "careers": "https://theclimatedatafactory.com"
+    "careers": "https://theclimatedatafactory.com",
+    "employees": 15
   },
   {
     "name": "First Street",
@@ -533,7 +561,8 @@
       "data science",
       "Python"
     ],
-    "careers": "https://firststreet.org/careers"
+    "careers": "https://firststreet.org/careers",
+    "employees": 120
   },
   {
     "name": "Cervest",
@@ -550,7 +579,8 @@
       "downscaling",
       "EO"
     ],
-    "careers": "https://cervest.earth"
+    "careers": "https://cervest.earth",
+    "employees": 30
   },
   {
     "name": "Sust Global",
@@ -569,7 +599,8 @@
       "Python",
       "financial risk"
     ],
-    "careers": "https://www.sustglobal.com/careers"
+    "careers": "https://www.sustglobal.com/careers",
+    "employees": 50
   },
   {
     "name": "Betterview",
@@ -587,7 +618,8 @@
       "insurance",
       "aerial imagery"
     ],
-    "careers": "https://www.betterview.com/en/careers"
+    "careers": "https://www.betterview.com/en/careers",
+    "employees": 120
   },
   {
     "name": "dClimate",
@@ -606,7 +638,8 @@
       "carbon",
       "data platform"
     ],
-    "careers": "https://www.dclimate.net/careers"
+    "careers": "https://www.dclimate.net/careers",
+    "employees": 20
   },
   {
     "name": "BlackRock",
@@ -624,7 +657,8 @@
       "Python",
       "financial risk"
     ],
-    "careers": "https://careers.blackrock.com"
+    "careers": "https://careers.blackrock.com",
+    "employees": 20000
   },
   {
     "name": "MSCI",
@@ -642,7 +676,8 @@
       "financial risk",
       "data science"
     ],
-    "careers": "https://careers.msci.com"
+    "careers": "https://careers.msci.com",
+    "employees": 4500
   },
   {
     "name": "S&P Global",
@@ -660,7 +695,8 @@
       "geospatial",
       "data science"
     ],
-    "careers": "https://careers.spglobal.com"
+    "careers": "https://careers.spglobal.com",
+    "employees": 35000
   },
   {
     "name": "McKinsey",
@@ -678,7 +714,8 @@
       "TCFD",
       "Python"
     ],
-    "careers": "https://www.mckinsey.com/careers"
+    "careers": "https://www.mckinsey.com/careers",
+    "employees": 45000
   },
   {
     "name": "Deloitte",
@@ -696,7 +733,8 @@
       "consulting",
       "scenario analysis"
     ],
-    "careers": "https://www2.deloitte.com/global/en/careers.html"
+    "careers": "https://www2.deloitte.com/global/en/careers.html",
+    "employees": 415000
   },
   {
     "name": "WTW",
@@ -714,7 +752,8 @@
       "consulting",
       "physical risk"
     ],
-    "careers": "https://careers.wtwco.com"
+    "careers": "https://careers.wtwco.com",
+    "employees": 45000
   },
   {
     "name": "World Bank / IFC",
@@ -733,7 +772,8 @@
       "Python",
       "development finance"
     ],
-    "careers": "https://jobs.worldbank.org"
+    "careers": "https://jobs.worldbank.org",
+    "employees": 12000
   },
   {
     "name": "Suyana",
@@ -754,7 +794,8 @@
       "Python",
       "risk-modelling"
     ],
-    "careers": "https://suyana.io"
+    "careers": "https://suyana.io",
+    "employees": 10
   },
   {
     "name": "Tomorrow.io",
@@ -774,7 +815,8 @@
       "nowcasting",
       "APIs"
     ],
-    "careers": "https://www.tomorrow.io/careers/"
+    "careers": "https://www.tomorrow.io/careers/",
+    "employees": 280
   },
   {
     "name": "Spire Global",
@@ -793,7 +835,8 @@
       "weather",
       "Python"
     ],
-    "careers": "https://spire.com/careers/"
+    "careers": "https://spire.com/careers/",
+    "employees": 500
   },
   {
     "name": "ClimateAi",
@@ -812,7 +855,8 @@
       "Python",
       "climate-scenarios"
     ],
-    "careers": "https://climate.ai/careers/"
+    "careers": "https://climate.ai/careers/",
+    "employees": 50
   },
   {
     "name": "Pachama",
@@ -832,7 +876,8 @@
       "Python",
       "remote-sensing"
     ],
-    "careers": "https://pachama.com/careers/"
+    "careers": "https://pachama.com/careers/",
+    "employees": 80
   },
   {
     "name": "South Pole",
@@ -851,6 +896,7 @@
       "consulting",
       "climate-scenarios"
     ],
-    "careers": "https://www.southpole.com/careers"
+    "careers": "https://www.southpole.com/careers",
+    "employees": 700
   }
 ]

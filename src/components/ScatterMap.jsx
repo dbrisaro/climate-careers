@@ -2,7 +2,15 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import { CATEGORY_CONFIG } from '../constants';
 
 const PAD = { top: 56, right: 32, bottom: 64, left: 72 };
-const DOT_R = 9;
+const MIN_R = 5;
+const MAX_R = 20;
+
+function dotRadius(employees = 100) {
+  const minLog = Math.log10(10);
+  const maxLog = Math.log10(450000);
+  const t = Math.max(0, Math.min(1, (Math.log10(employees) - minLog) / (maxLog - minLog)));
+  return MIN_R + t * (MAX_R - MIN_R);
+}
 
 function useSize(ref) {
   const [size, setSize] = useState({ w: 700, h: 520 });
@@ -96,7 +104,8 @@ export default function ScatterMap({ companies, selected, onSelect }) {
           const cfg = CATEGORY_CONFIG[c.category];
           const isSelected = selected?.name === c.name;
           const isHovered = hovered?.name === c.name;
-          const r = isSelected ? DOT_R + 3 : isHovered ? DOT_R + 2 : DOT_R;
+          const baseR = dotRadius(c.employees);
+          const r = isSelected ? baseR + 3 : isHovered ? baseR + 2 : baseR;
 
           // Alternate label above/below dot to reduce overlap in dense clusters
           const labelRight = cx < PAD.left + plotW * 0.72;
@@ -138,10 +147,26 @@ export default function ScatterMap({ companies, selected, onSelect }) {
         })}
       </svg>
 
-      {/* Bottom hint */}
-      <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 px-1">
-        Click any company to see details.
-      </p>
+      {/* Bottom hint + size legend */}
+      <div className="flex items-center justify-between mt-1 px-1">
+        <p className="text-xs text-gray-400 dark:text-gray-500">
+          Click any company to see details.
+        </p>
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-gray-400 dark:text-gray-500">employees</span>
+          {[['~50', 50], ['~500', 500], ['~5k', 5000], ['~50k', 50000]].map(([label, n]) => (
+            <div key={label} className="flex items-center gap-1">
+              <svg width={dotRadius(n) * 2 + 2} height={dotRadius(n) * 2 + 2}>
+                <circle
+                  cx={dotRadius(n) + 1} cy={dotRadius(n) + 1} r={dotRadius(n)}
+                  fill="none" stroke="#9ca3af" strokeWidth={1.5}
+                />
+              </svg>
+              <span className="text-xs text-gray-400 dark:text-gray-500">{label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
