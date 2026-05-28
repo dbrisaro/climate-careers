@@ -1,9 +1,13 @@
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { CATEGORY_CONFIG } from '../constants';
 
 const PAD = { top: 56, right: 32, bottom: 64, left: 72 };
 const MIN_R = 5;
 const MAX_R = 20;
+const FONT_SIZE = 10;
+const LINE_H = 13;   // approximate label height
+const CHAR_W = 5.6;  // approximate char width at fontSize 10
+const DOT_PAD = 4;   // gap between dot edge and label
 
 function dotRadius(employees = 100) {
   const minLog = Math.log10(10);
@@ -25,6 +29,62 @@ function useSize(ref) {
   return size;
 }
 
+// Compute label positions with iterative collision avoidance.
+// Returns a map of { [name]: { lx, ly, anchor, cx, cy } }
+function computeLabelPositions(companies, plotW, plotH) {
+  if (plotW <= 0 || plotH <= 0) return {};
+
+  const labels = companies.map((c) => {
+    const cx = PAD.left + c.x * plotW;
+    const cy = PAD.top + (1 - c.y) * plotH;
+    const r = dotRadius(c.employees);
+    const goRight = cx < PAD.left + plotW * 0.72;
+    const lx = goRight ? cx + r + DOT_PAD : cx - r - DOT_PAD;
+    const textW = c.name.length * CHAR_W;
+    return { name: c.name, cx, cy, lx, ly: cy, textW, goRight };
+  });
+
+  // Iteratively push overlapping labels apart (vertical only)
+  for (let iter = 0; iter < 50; iter++) {
+    let moved = false;
+    for (let i = 0; i < labels.length; i++) {
+      for (let j = i + 1; j < labels.length; j++) {
+        const a = labels[i];
+        const b = labels[j];
+
+        // Horizontal extent of each label box
+        const aL = a.goRight ? a.lx : a.lx - a.textW;
+        const aR = a.goRight ? a.lx + a.textW : a.lx;
+        const bL = b.goRight ? b.lx : b.lx - b.textW;
+        const bR = b.goRight ? b.lx + b.textW : b.lx;
+
+        // Skip if no horizontal overlap (with 2px slop)
+        if (aR + 2 < bL || bR + 2 < aL) continue;
+
+        // Vertical overlap
+        const aTop = a.ly - LINE_H;
+        const bTop = b.ly - LINE_H;
+        const overlap = Math.min(a.ly, b.ly) - Math.max(aTop, bTop);
+        if (overlap <= 1) continue;
+
+        // Push the two labels apart by half the overlap each
+        const push = (overlap + 2) / 2;
+        if (a.cy <= b.cy) {
+          a.ly -= push;
+          b.ly += push;
+        } else {
+          a.ly += push;
+          b.ly -= push;
+        }
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+
+  return Object.fromEntries(labels.map((l) => [l.name, l]));
+}
+
 export default function ScatterMap({ companies, selected, onSelect }) {
   const containerRef = useRef(null);
   const { w, h } = useSize(containerRef);
@@ -41,6 +101,11 @@ export default function ScatterMap({ companies, selected, onSelect }) {
 
   const midX = PAD.left + plotW / 2;
   const midY = PAD.top + plotH / 2;
+
+  const labelPositions = useMemo(
+    () => computeLabelPositions(companies, plotW, plotH),
+    [companies, plotW, plotH]
+  );
 
   return (
     <div ref={containerRef} className="relative w-full h-full select-none">
@@ -62,34 +127,25 @@ export default function ScatterMap({ companies, selected, onSelect }) {
           className="dark:stroke-gray-600" />
 
         {/* Quadrant corner labels */}
-        {/* Top-left */}
         <text x={PAD.left + 10} y={PAD.top + 16} fontSize={10} fill="#9ca3af" fontStyle="italic" className="dark:fill-gray-500">finance / insurance</text>
         <text x={PAD.left + 10} y={PAD.top + 29} fontSize={10} fill="#9ca3af" fontStyle="italic" className="dark:fill-gray-500">applied science</text>
-        {/* Top-right */}
         <text x={PAD.left + plotW - 10} y={PAD.top + 16} fontSize={10} fill="#9ca3af" fontStyle="italic" textAnchor="end" className="dark:fill-gray-500">research / EO</text>
         <text x={PAD.left + plotW - 10} y={PAD.top + 29} fontSize={10} fill="#9ca3af" fontStyle="italic" textAnchor="end" className="dark:fill-gray-500">deep science</text>
-        {/* Bottom-left */}
         <text x={PAD.left + 10} y={PAD.top + plotH - 18} fontSize={10} fill="#9ca3af" fontStyle="italic" className="dark:fill-gray-500">low finance</text>
         <text x={PAD.left + 10} y={PAD.top + plotH - 7} fontSize={10} fill="#9ca3af" fontStyle="italic" className="dark:fill-gray-500">applied science</text>
-        {/* Bottom-right */}
         <text x={PAD.left + plotW - 10} y={PAD.top + plotH - 18} fontSize={10} fill="#9ca3af" fontStyle="italic" textAnchor="end" className="dark:fill-gray-500">research / EO</text>
         <text x={PAD.left + plotW - 10} y={PAD.top + plotH - 7} fontSize={10} fill="#9ca3af" fontStyle="italic" textAnchor="end" className="dark:fill-gray-500">low finance</text>
 
-        {/* X axis top labels */}
+        {/* Axis labels */}
         <text x={PAD.left + 8} y={PAD.top - 8} fontSize={11} fill="#6b7280" className="dark:fill-gray-400">applied</text>
         <text x={PAD.left + plotW - 8} y={PAD.top - 8} fontSize={11} fill="#6b7280" textAnchor="end" className="dark:fill-gray-400">research</text>
         <text x={midX} y={PAD.top - 8} fontSize={11} fill="#6b7280" textAnchor="middle" fontWeight="500" className="dark:fill-gray-300">Scientific depth</text>
-
-        {/* X axis bottom labels */}
         <text x={PAD.left + 8} y={PAD.top + plotH + 18} fontSize={10} fill="#9ca3af" className="dark:fill-gray-500">more applied / industry</text>
         <text x={PAD.left + plotW - 8} y={PAD.top + plotH + 18} fontSize={10} fill="#9ca3af" textAnchor="end" className="dark:fill-gray-500">more scientific / research</text>
-
-        {/* Y axis labels */}
         <text x={PAD.left - 10} y={PAD.top + 4} fontSize={11} fill="#6b7280" textAnchor="end" className="dark:fill-gray-400">high</text>
         <text x={PAD.left - 10} y={PAD.top + plotH + 4} fontSize={11} fill="#6b7280" textAnchor="end" className="dark:fill-gray-400">low</text>
         <text
-          x={18}
-          y={PAD.top + plotH / 2}
+          x={18} y={PAD.top + plotH / 2}
           fontSize={11} fill="#6b7280" textAnchor="middle"
           transform={`rotate(-90, 18, ${PAD.top + plotH / 2})`}
           className="dark:fill-gray-400"
@@ -97,8 +153,30 @@ export default function ScatterMap({ companies, selected, onSelect }) {
           Insurance/finance focus
         </text>
 
+        {/* Connector lines (drawn below dots) */}
+        {companies.map((c) => {
+          const lpos = labelPositions[c.name];
+          if (!lpos) return null;
+          const displaced = Math.abs(lpos.ly - lpos.cy) > 10;
+          if (!displaced) return null;
+          const cfg = CATEGORY_CONFIG[c.category];
+          // Line from dot edge toward label
+          const angle = Math.atan2(lpos.ly - lpos.cy, lpos.lx - lpos.cx);
+          const r = dotRadius(c.employees);
+          const x1 = lpos.cx + Math.cos(angle) * (r + 2);
+          const y1 = lpos.cy + Math.sin(angle) * (r + 2);
+          return (
+            <line
+              key={`line-${c.name}`}
+              x1={x1} y1={y1} x2={lpos.lx} y2={lpos.ly - 3}
+              stroke={cfg.color} strokeWidth={0.75} opacity={0.35}
+              strokeDasharray="2 2"
+            />
+          );
+        })}
+
         {/* Company dots + labels */}
-        {companies.map((c, i) => {
+        {companies.map((c) => {
           const cx = toSvgX(c.x);
           const cy = toSvgY(c.y);
           const cfg = CATEGORY_CONFIG[c.category];
@@ -107,12 +185,10 @@ export default function ScatterMap({ companies, selected, onSelect }) {
           const baseR = dotRadius(c.employees);
           const r = isSelected ? baseR + 3 : isHovered ? baseR + 2 : baseR;
 
-          // Alternate label above/below dot to reduce overlap in dense clusters
-          const labelRight = cx < PAD.left + plotW * 0.72;
-          const labelX = labelRight ? cx + r + 4 : cx - r - 4;
-          const labelAnchor = labelRight ? 'start' : 'end';
-          // Stagger vertical offset by index to spread overlapping labels
-          const yOffset = (i % 2 === 0) ? 4 : -3;
+          const lpos = labelPositions[c.name];
+          const labelX = lpos ? lpos.lx : cx + r + DOT_PAD;
+          const labelY = lpos ? lpos.ly : cy;
+          const labelAnchor = lpos ? (lpos.goRight ? 'start' : 'end') : 'start';
 
           return (
             <g key={c.name}>
@@ -132,12 +208,12 @@ export default function ScatterMap({ companies, selected, onSelect }) {
               />
               <text
                 x={labelX}
-                y={cy + yOffset}
-                fontSize={isSelected || isHovered ? 11 : 10}
+                y={labelY}
+                fontSize={isSelected || isHovered ? 11 : FONT_SIZE}
                 fontWeight={isSelected || isHovered ? '600' : '400'}
                 fill={isSelected || isHovered ? '#111827' : '#374151'}
                 textAnchor={labelAnchor}
-                className="cursor-pointer pointer-events-none dark:fill-gray-200"
+                className="pointer-events-none dark:fill-gray-200"
                 style={{ userSelect: 'none' }}
               >
                 {c.name}
