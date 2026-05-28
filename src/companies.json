@@ -8,7 +8,7 @@
     "fit": 5,
     "country": "EU",
     "description": "European Space Agency. Highly scientific EO roles requiring PhD and publications. Direct target for climate applications scientist profiles.",
-    "relevance": "Direct match for Earth observation scientists. ESA's Climate Office and Phi-Lab run cutting-edge research in climate data products using Sentinel, MODIS, and multispectral imagery — exactly the technical stack you know.",
+    "relevance": "Direct match for Earth observation scientists. ESA's Climate Office and Phi-Lab run cutting-edge research in climate data products using Sentinel, MODIS, and multispectral imagery \u2014 exactly the technical stack you know.",
     "tags": [
       "EO",
       "satellite",
@@ -62,7 +62,7 @@
     "fit": 4,
     "country": "EU",
     "description": "EU Earth observation programme operated via ESA and EUMETSAT. Produces land, marine, atmosphere and climate change monitoring services.",
-    "relevance": "Land surface and climate monitoring products built on Sentinel data — direct overlap with remote sensing workflows. Contracting opportunities via service providers.",
+    "relevance": "Land surface and climate monitoring products built on Sentinel data \u2014 direct overlap with remote sensing workflows. Contracting opportunities via service providers.",
     "tags": [
       "EO",
       "Sentinel",
@@ -192,7 +192,7 @@
     "fit": 4,
     "country": "FI",
     "description": "Finland. World's largest SAR satellite constellation. Flood, wildfire and hurricane monitoring for insurers and governments. Very strong EO + insurance intersection.",
-    "relevance": "SAR specialist with direct insurance applications. ICEYE products are used by insurers for parametric flood and wildfire triggers — strong overlap with remote sensing + insurance interest.",
+    "relevance": "SAR specialist with direct insurance applications. ICEYE products are used by insurers for parametric flood and wildfire triggers \u2014 strong overlap with remote sensing + insurance interest.",
     "tags": [
       "SAR",
       "EO",
@@ -212,7 +212,7 @@
     "fit": 5,
     "country": "ES",
     "description": "Barcelona. Physics-based climate risk models using CMIP6 and HPC. Spun out of Barcelona Supercomputing Center. Science-first culture.",
-    "relevance": "Spun out of BSC — same culture as academic climate science, but applied to insurance and finance. CMIP6 workflows, HPC, Python. Barcelona location is a bonus.",
+    "relevance": "Spun out of BSC \u2014 same culture as academic climate science, but applied to insurance and finance. CMIP6 workflows, HPC, Python. Barcelona location is a bonus.",
     "tags": [
       "CMIP6",
       "physical risk",
@@ -305,7 +305,7 @@
     "fit": 4,
     "country": "GB",
     "description": "UK. Flood science specialist. Global flood models with CMIP6 climate projections. Works with reinsurers, insurers and World Bank on parametric sovereign risk.",
-    "relevance": "Flood modelling + parametric sovereign risk — a rare combination. CMIP6 projections in a real insurance context. Strong science culture for a UK firm.",
+    "relevance": "Flood modelling + parametric sovereign risk \u2014 a rare combination. CMIP6 projections in a real insurance context. Strong science culture for a UK firm.",
     "tags": [
       "flood",
       "CMIP6",
@@ -324,7 +324,7 @@
     "fit": 4,
     "country": "AU",
     "description": "Australia (remote-friendly). Physics-based tropical cyclone risk analytics for (re)insurers and ILS. Products: DeepCyc (climate-adjusted cat models), LiveCyc (real-time forecasting), Metryc (event reconstruction). Clients include Swiss Re, AXA Climate, Descartes, Kettle.",
-    "relevance": "Science-first team building climate-adjusted TC models — directly used for parametric triggers. Strong intersection of climate physics and insurance. Remote-friendly makes it accessible from Europe.",
+    "relevance": "Science-first team building climate-adjusted TC models \u2014 directly used for parametric triggers. Strong intersection of climate physics and insurance. Remote-friendly makes it accessible from Europe.",
     "tags": [
       "cat modelling",
       "tropical cyclones",
@@ -361,7 +361,7 @@
     "fit": 4,
     "country": "FR",
     "description": "Paris. Parametric insurance using physics-based models and satellite data. 150 people, 60+ countries.",
-    "relevance": "EO data + parametric triggers at scale. Paris-based. Uses satellite data to build parametric products — strong fit for a remote sensing scientist transitioning to insurance.",
+    "relevance": "EO data + parametric triggers at scale. Paris-based. Uses satellite data to build parametric products \u2014 strong fit for a remote sensing scientist transitioning to insurance.",
     "tags": [
       "parametric",
       "satellite",
@@ -379,7 +379,7 @@
     "fit": 5,
     "country": "US",
     "description": "NYC. Parametric flood insurance using satellite flood detection. MODIS and VIIRS stack. Direct overlap with your remote sensing background.",
-    "relevance": "Exact overlap: uses MODIS, VIIRS and SAR for parametric flood triggers — the same data stack as your background. One of the strongest technical fits in the landscape.",
+    "relevance": "Exact overlap: uses MODIS, VIIRS and SAR for parametric flood triggers \u2014 the same data stack as your background. One of the strongest technical fits in the landscape.",
     "tags": [
       "parametric",
       "flood",
@@ -432,7 +432,7 @@
     "x": 0.65,
     "y": 0.48,
     "country": "EU",
-    "description": "Hamburg. Physical climate risk analytics for infrastructure portfolios — power grids, solar, wind, data centers. Spun out of CEN (University of Hamburg). Clients include Enel and E.ON.",
+    "description": "Hamburg. Physical climate risk analytics for infrastructure portfolios \u2014 power grids, solar, wind, data centers. Spun out of CEN (University of Hamburg). Clients include Enel and E.ON.",
     "relevance": "ML hazard models + EO data translated into financial impacts (CapEx, OpEx, AAL) at asset level. Science-born, infrastructure-facing. Relevant if interested in climate risk for energy transition assets.",
     "tags": [
       "physical risk",
@@ -488,7 +488,7 @@
     "fit": 3,
     "country": "FR",
     "description": "Nanterre. Climate resilience engineering for infrastructure, cities and buildings. Part of VINCI/Sixense group. Works with World Bank, EU Commission, development banks. 150+ projects in 60 countries.",
-    "relevance": "Engineering-focused climate adaptation — geospatial analysis, hazard modelling, EO for vulnerability assessment. Public sector and infrastructure clients globally. Less insurance, more applied science for policy.",
+    "relevance": "Engineering-focused climate adaptation \u2014 geospatial analysis, hazard modelling, EO for vulnerability assessment. Public sector and infrastructure clients globally. Less insurance, more applied science for policy.",
     "tags": [
       "physical risk",
       "infrastructure",
@@ -580,7 +580,7 @@
     "fit": 2,
     "country": "DE",
     "description": "Munich. Geospatial property intelligence for insurers using aerial and satellite imagery. More property inspection than climate science.",
-    "relevance": "EO applied to property insurance — less climate science, more inspection and underwriting support. Lower fit unless interested in property risk specifically.",
+    "relevance": "EO applied to property insurance \u2014 less climate science, more inspection and underwriting support. Lower fit unless interested in property risk specifically.",
     "tags": [
       "EO",
       "property",
@@ -669,7 +669,7 @@
     "x": 0.28,
     "y": 0.78,
     "country": "GB",
-    "description": "Global. Sustainability & Climate Analytics practice works on climate risk quantification for corporates and financial institutions. More analytical than typical McKinsey — uses climate models and scenario analysis.",
+    "description": "Global. Sustainability & Climate Analytics practice works on climate risk quantification for corporates and financial institutions. More analytical than typical McKinsey \u2014 uses climate models and scenario analysis.",
     "relevance": "The analytics/data science track within the climate practice involves building climate risk models and translating IPCC scenarios into business impact. Requires strong communication skills alongside technical depth.",
     "tags": [
       "climate risk",
@@ -688,7 +688,7 @@
     "y": 0.76,
     "country": "GB",
     "description": "Global. Climate & Sustainability practice covers physical climate risk, TCFD/CSRD reporting and climate scenario analysis for financial institutions and corporates. Growing technical team.",
-    "relevance": "Technical roles exist within the climate risk practice — building physical risk models, processing climate data for CSRD disclosures. Less deep science than specialist firms but significant client exposure.",
+    "relevance": "Technical roles exist within the climate risk practice \u2014 building physical risk models, processing climate data for CSRD disclosures. Less deep science than specialist firms but significant client exposure.",
     "tags": [
       "climate risk",
       "TCFD",
@@ -705,8 +705,8 @@
     "x": 0.42,
     "y": 0.84,
     "country": "GB",
-    "description": "London. Willis Towers Watson — insurance consulting and cat risk analytics. Climate Quantified team builds physical climate risk tools for insurers. More technical than AON, closer to the modelling.",
-    "relevance": "Cat risk analytics and climate modelling for the insurance market. Uses hazard models and climate projections — closer to the technical end of insurance consulting.",
+    "description": "London. Willis Towers Watson \u2014 insurance consulting and cat risk analytics. Climate Quantified team builds physical climate risk tools for insurers. More technical than AON, closer to the modelling.",
+    "relevance": "Cat risk analytics and climate modelling for the insurance market. Uses hazard models and climate projections \u2014 closer to the technical end of insurance consulting.",
     "tags": [
       "cat modelling",
       "insurance",
@@ -734,5 +734,26 @@
       "development finance"
     ],
     "careers": "https://jobs.worldbank.org"
+  },
+  {
+    "name": "Suyana",
+    "category": "parametric",
+    "region": "Remote",
+    "x": 0.48,
+    "y": 0.84,
+    "country": "US",
+    "description": "Parametric climate insurance embedded in financial products. Monitors drought, flood, storm surge and heatwave via satellite and proprietary models; triggers automatic payouts when conditions cross predefined thresholds. No claims process.",
+    "relevance": "End-to-end parametric platform: satellite measurement, risk aggregation, and automatic payouts. Combines remote sensing, climate modelling and insurance product design \u2014 strong fit for a data scientist with EO and physical risk background.",
+    "tags": [
+      "parametric",
+      "satellite",
+      "flood",
+      "drought",
+      "NDVI",
+      "storm-surge",
+      "Python",
+      "risk-modelling"
+    ],
+    "careers": "https://suyana.io"
   }
 ]
