@@ -326,16 +326,15 @@
   },
   {
     "name": "Repath Earth",
-    "category": "parametric",
+    "category": "risk",
     "region": "Europe",
-    "x": 0.60,
-    "y": 0.62,
-    "fit": 4,
+    "x": 0.65,
+    "y": 0.48,
     "country": "EU",
-    "description": "Parametric insurance data and modelling platform for energy and climate risks. Science-based triggers for renewable energy sector.",
-    "relevance": "Renewable energy + parametric insurance is a growing niche. Science-based trigger design for wind and solar. Relevant if interested in energy transition x climate risk.",
-    "tags": ["parametric", "renewable energy", "climate risk", "modelling"],
-    "careers": "https://repath.earth"
+    "description": "Hamburg. Physical climate risk analytics for infrastructure portfolios — power grids, solar, wind, data centers. Spun out of CEN (University of Hamburg). Clients include Enel and E.ON.",
+    "relevance": "ML hazard models + EO data translated into financial impacts (CapEx, OpEx, AAL) at asset level. Science-born, infrastructure-facing. Relevant if interested in climate risk for energy transition assets.",
+    "tags": ["physical risk", "infrastructure", "EO", "ML", "climate analytics", "Python"],
+    "careers": "https://repath.earth/join-us"
   },
   {
     "name": "AON",
