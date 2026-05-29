@@ -58,7 +58,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-sm font-semibold text-gray-900 dark:text-gray-50 leading-tight">
-                Climate Risk Explorer
+                Climate Industry Landscape
               </h1>
               <p className="text-xs text-gray-400 leading-tight hidden sm:block">
                 EO · Physical risk · Parametric insurance
